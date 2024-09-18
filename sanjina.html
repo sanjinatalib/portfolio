@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Default styles for desktop */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: rgb(10, 10, 10);
+}
+
+header {
+    background: #101161;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 25px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: dotted;
+}
+
+a:hover {
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.bio, .skills, .projects, .certifications {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.bio {
+    background: url('https://parade.com/.image/t_share/MTkwNTgxMzE1MzEzMzQ2NDI4/grad-pic-ideas-3-jpg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 20px;
+    height: 30%;
+    border-radius: 8px;
+}
+
+.bio p, .certifications ul, .projects ul, .skills ul {
+    margin: 15px 0;
+    font-size: 30px;
+}
+
+.skills, .certifications, .projects {
+    margin-top: 3%;
+}
+
+.skills ul li, .certifications ul li, .projects ul li {
+    background: #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.skills h2, .projects h2, .certifications h2 {
+    color: white;
+    font-size: 60px;
+    background-color: #101161;
+    margin-top: 2%;
+}
+
+.skills ul li:hover, .certifications ul li:hover, .projects ul li:hover {
+    background: blue;
+    transform: translateX(50px);
+}
+
+/* Animation for the bio p */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bio p {
+    text-align: left;
+    direction: ltr;
+    padding-left: 20px;
+    margin-left: 0;
+    font-size: 30px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Media Queries for Tablets (width 768px or less) */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .bio, .skills, .projects, .certifications {
+        padding: 15px;
+    }
+
+    .bio p, .skills ul, .certifications ul, .projects ul {
+        font-size: 25px;
+    }
+
+    .skills h2, .projects h2, .certifications h2 {
+        font-size: 50px;
+    }
+}
+
+/* Media Queries for Mobile (width 480px or less) */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .bio {
+        padding: 10px;
+    }
+
+    .bio p, .skills ul, .certifications ul, .projects ul {
+        font-size: 20px;
+    }
+
+    .skills h2, .projects h2, .certifications h2 {
+        font-size: 40px;
+    }
+
+    .skills ul li, .certifications ul li, .projects ul li {
+        padding: 8px;
+    }
+
+    a:hover {
+        font-size: 18px;
+    }
+}
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 100%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        max-width: 100%; 
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="float: left; padding-left: 30px;">Sanjina's Portfolio</h1>
+        <nav>
+            <ul >
+                <li><a href="#bio">Bio Data</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        
+        <section id="bio" class="bio">
+            <h1 style="font-size: 40px;">Bio Data</h1>
+            <br><br>
+            <p >Hello! I'm Sanjina talib, a passionate web developer with experience in creating dynamic websites and web applications.<br> I have a strong background in front-end and back-end development.<br><br></p>
+        </section>
+
+        <BR><BR>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>ReactJS</li>
+                <li>Node.js & Express</li>
+                <li>Python & Django</li>
+                <li>SQL & NoSQL Databases</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Portfolio Website - A responsive personal portfolio showcasing my skills and projects.</li>
+                <li>E-commerce Store - A full-stack web app for online shopping using MERN stack.</li>
+                <li>Task Manager - A simple task manager built with React and Node.js.</li>
+            </ul>
+        </section>
+
+        <section id="certifications" class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Responsive Web Design - freeCodeCamp</li>
+                <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+                <li>Full Stack Web Developer - Udemy</li>
+
+                <h3 style="font-size: 30px; color: #fff; background-color: #101161;"> Github certifications</h3>
+                <img src="1.png" alt="" >
+                <img src="2.png" alt="">
+            </ul>
+        </section>
+
+
+        
+    
+
+</body>
+</html>
